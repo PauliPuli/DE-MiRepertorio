@@ -15,7 +15,7 @@ allowExitOnIdle: true,
 
 const pool = new Pool(config);
 
-//Conexión comprobada ✅
+// //Conexión comprobada ✅
 // const getDate = async () =>{
 // const response = await pool.query('select now()');
 // console.log(response.rows)}

@@ -6,11 +6,12 @@ const __dirname = import.meta.dirname;
 const app = express();
 const PORT = process.env.PORT || 3002;
 
+
 //middlewares
-app.use('/', router);
-app.use(express.static(path.join(__dirname, 'assets')));
+
 app.use(express.json());//cómo enviar data
 app.use(express.urlencoded({ extended: false }));//envía datos por formularios
+app.use('/', router);
 
 
 app.listen(PORT, () =>
