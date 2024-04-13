@@ -11,6 +11,7 @@ const PORT = process.env.PORT || 3002;
 
 app.use(express.json());//cómo enviar data
 app.use(express.urlencoded({ extended: false }));//envía datos por formularios
+app.use(express.static('img'));
 app.use('/', router);
 
 
